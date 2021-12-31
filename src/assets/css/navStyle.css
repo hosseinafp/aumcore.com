@@ -1,0 +1,50 @@
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 9px 5px;
+	outline: none;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.5vw;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+.cl-effect a {
+	overflow: hidden;
+	padding: 0 4px;
+}
+
+.cl-effect a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	padding-right: 5px;
+}
+
+.cl-effect a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	color: red;
+}
+
+.cl-effect a:hover span,
+.cl-effect a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+	color: red;
+}
