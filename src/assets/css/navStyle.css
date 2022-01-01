@@ -46,5 +46,9 @@ nav a:focus {
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
-	color: red;
+	color: brown;
+}
+.color:hover{
+    color: red;
+	cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react';
+//animations
 import AOS from 'aos';
 
 const Cooperation = () => {

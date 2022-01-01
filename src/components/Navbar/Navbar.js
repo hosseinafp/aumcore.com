@@ -1,22 +1,23 @@
 import React from 'react';
+//photos
 import logo from '../../assets/img/aum-logo.png';
 import usa from '../../assets/img/usa.jpg';
 import fr from '../../assets/img/fr.jpg';
-
+//styles
 import '../../assets/css/navStyle.css';
 
 const Navbar = () => {
     return (
-        <div className='fixed-top sticky-top bg-light navbar-light pt-2'>
+        <div className='sticky-top bg-light navbar-light pt-2 autohide'>
                 <div class="container-fluid d-md-none">
-                    <div className='row justify-content-between'>
+                    <div className='row justify-content-between mx-0'>
                         <div className='col-6'>
-                        <a class="navbar-brand" href="/"><img alt='' src={logo} style={{widows:'3vw'}} /></a>
+                            <a class="navbar-brand" href="/"><img alt='' src={logo} style={{widows:'3vw'}} /></a>
                         </div>
                         <div className='col-6'>
                                 <div className='row'>
                                     <div className='col-9 order-md-1 row justify-content-end px-4'>
-                                        <div className='col-1'>
+                                        <div className='col-1 p-0'>
                                             <img alt='' style={{width:'20px' }} src={usa} />US
                                         </div>
                                         <div className='col-1 px-4'>
@@ -59,11 +60,14 @@ const Navbar = () => {
                             </div>
                     </div>
                 </div>
-            
             <div className='d-none d-md-block'>
-                <div className='row justify-content-end pe-5'>
-                        <img alt='' style={{width:'60px' }} src={usa} />US
-                        <img alt='' style={{width:'60px' }} src={fr} />FR
+                <div className='row justify-content-end pe-5 d-block text-end'>
+                    <span className='color'>
+                        <img alt='' style={{width:'30px' }} src={usa} />US
+                    </span>
+                    <span className='color'>
+                        <img alt='' style={{width:'30px' }} src={fr} />FR
+                    </span>
                 </div>
                 <div className='row justify-content-between mx-1'>
                     <div className='col-2 align-self-center'>
@@ -71,7 +75,7 @@ const Navbar = () => {
                     </div>
                     <div className='col-10'>
                         <section class="text-dark text-end me-5" style={{justifyContent:'end'}}>
-                            <nav class="cl-effect">
+                            <nav class="cl-effect" style={{paddingRight: '40px'}}>
                                 <a href="#"><span className="hoverColor text-danger" data-hover="HOME">HOME</span></a>
                                 <a href="#"><span className="hoverColor" data-hover="SETVICES">SERVICES</span></a>
                                 <a href="#"><span className="hoverColor" data-hover="WORK">WORK</span></a>

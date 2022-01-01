@@ -1,5 +1,5 @@
 import React from 'react';
-
+//photos
 import logo from '../../assets/img/aum-logo-small-white.png';
 
 const Footer = () => {
